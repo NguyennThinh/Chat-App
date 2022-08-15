@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/add_position"
+        android:title="Thêm chức vụ"
+        android:icon="@drawable/ic_position"
+        />
+    <item android:id="@+id/update_department"
+        android:title="Cập nhật"
+        android:icon="@drawable/ic_edit"
+        />
+
+</menu>

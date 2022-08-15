@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/information"
+        android:title="Xem thông tin"
+        android:icon="@drawable/ic_employee" />
+    <item android:id="@+id/update_employee"
+        android:title="Cập nhật "
+        android:icon="@drawable/ic_edit"
+     />
+    <item android:id="@+id/delete_employee"
+        android:title="Xóa nhân viên"
+        android:icon="@drawable/ic_delete"
+      />
+</menu>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserSender"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="60dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@color/blue_sky_light" />
+
+    <RelativeLayout
+        android:id="@+id/layout_chat"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/layout_message"
+        android:backgroundTint="@color/blue_sky_light"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_message">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/message_text"
+                android:maxWidth="250dp"
+                android:gravity="right"
+                android:visibility="gone"
+                android:minWidth="50dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="adsadadsada" />
+            <ImageView
+                android:id="@+id/message_image"
+                android:src="@drawable/ic_logo"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"/>
+
+            <VideoView
+                android:id="@+id/message_video"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:maxWidth="150dp"
+                android:maxHeight="150dp"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_message_file"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_file"
+
+                    android:layout_width="30dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                  />
+                <TextView
+                    android:maxWidth="300dp"
+                    android:gravity="center"
+                    android:layout_toEndOf="@id/img_file"
+                    android:minWidth="50dp"
+                    android:textSize="16sp"
+                    android:id="@+id/file_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="adasdasdasdasdasdasad"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/file_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/file_name"
+                    android:layout_alignEnd="@id/file_name"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:maxWidth="250dp"
+                    android:minWidth="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/time_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_message"
+            android:layout_alignStart="@id/layout_message"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#555555"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_chat"
+        android:layout_alignStart="@+id/layout_chat"
+        android:layout_marginStart="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>

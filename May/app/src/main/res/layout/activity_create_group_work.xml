@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".View.CreateGroupWorkActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/blue_tool">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TẠO NHÓM CÔNG VIỆC"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_group_avatar"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginStart="10sp"
+            android:src="@drawable/ic_camera" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/layout_name"
+        android:background="@drawable/bg_radius10"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#efefefef"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#efefefef"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/input_group_name"/>
+
+        <ImageView
+            android:id="@+id/img_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_drop_down" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/display_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="10sp"
+        android:padding="10sp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lisst_user_choosen"
+            android:layout_width="0dp"
+            android:padding="10sp"
+            android:layout_height="60dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/create_group"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="5sp"
+            android:src="@drawable/ic_create"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="#3C000000"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/layout_progressbar"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Đang tạo nhóm..."/>
+    </LinearLayout>
+</RelativeLayout>

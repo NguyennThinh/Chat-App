@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/process"
+        android:title="Đang thực hiện"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_load"/>
+
+    <item android:id="@+id/complete"
+        android:title="Đã hoàn thành"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_check"/>
+    <item android:id="@+id/out_date"
+        android:title="Qúa hạn"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_work_out_date"/>
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.WorkGroupActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/blue_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/return_activity"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:src="@drawable/ic_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DANH SÁCH CÔNG VIỆC"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"/>
+
+            <ImageView
+                android:id="@+id/add_work"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10sp"
+                android:src="@drawable/ic_add_work" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_work_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:paddingBottom="10sp"/>
+</LinearLayout>

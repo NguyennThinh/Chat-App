@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Quản lý">
+        <menu>
+            <item android:id="@+id/employee_manager"
+                android:title="Quản lý nhân viên"
+                android:icon="@drawable/ic_account"/>
+
+            <item android:id="@+id/work_manager"
+                android:title="Quản lý công việc"
+                android:icon="@drawable/ic_manager_work"/>
+
+            <item android:id="@+id/group_manager"
+                android:title="Quản lý nhóm"
+                android:icon="@drawable/ic_manager_group"/>
+
+            <item android:id="@+id/department_manager"
+                android:title="Quản lý phòng ban"
+                android:icon="@drawable/ic_manage_department"/>
+
+            <item android:id="@+id/attendance_manager"
+                android:title="Quản lý điểm danh"
+                android:icon="@drawable/manager_attendance"/>
+            <item android:id="@+id/log"
+                android:title="Lịch sử hoạt động"
+                android:icon="@drawable/history_activity"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Hoạt động">
+        <menu>
+            <item android:id="@+id/attendance"
+                android:title="Điểm danh"
+                android:icon="@drawable/ic_attendance"/>
+
+            <item android:id="@+id/list_work"
+                android:title="Danh sách công việc của bạn"
+                android:icon="@drawable/ic_work"/>
+            <item android:id="@+id/department"
+                android:title="Phòng ban của bạn"
+                android:icon="@drawable/ic_department"/>
+            <item android:id="@+id/message_company"
+                android:title="Nhắn tin công ty"
+                android:icon="@drawable/ic_message"/>
+        </menu>
+    </item>
+
+    <item android:title="Tài khoản">
+        <menu>
+            <item android:id="@+id/personal"
+                android:title="Thông tin cá nhân"
+                android:icon="@drawable/ic_account"/>
+            <item android:id="@+id/change_pass"
+                android:title="Đổi mật khẩu"
+                android:icon="@drawable/ic_passwork"/>
+            <item android:id="@+id/logout"
+                android:title="Đăng xuất"
+                android:icon="@drawable/ic_logout"/>
+
+        </menu>
+    </item>
+
+
+
+
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_participant"
+        android:title="Thêm thành viên công việc"
+        android:icon="@drawable/ic_add_participant" />
+
+    <item android:id="@+id/update_work"
+        android:title="Cập nhật"
+        android:icon="@drawable/ic_update"
+        />
+    <item android:id="@+id/delete_work"
+        android:title="Xóa"
+        android:icon="@drawable/ic_delete_work" />
+</menu>
